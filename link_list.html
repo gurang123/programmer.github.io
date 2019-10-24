@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Programer Library</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Avilon
+    Theme URL: https://bootstrapmade.com/avilon-bootstrap-landing-page-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+   <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto"> Programer <br> <span style="font-size:17px">Library</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title=""></a> -->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+
+   <section id="intro">
+
+    <div class="intro-text">
+      <p style="margin-top: 400px;">We are provide knowledge about computer language C.</p>
+      <a href="#main" class="btn-get-started scrollto">Get Started</a>    </div>
+
+   
+    </div>
+
+  </section><!-- #intro -->
+
+
+
+<section id="main" class="main">
+      <div class="pro-base" align="center">
+         <div class="def">
+            <div align="center" class="theory">
+              <span style="font-size: 25px;color: #000;">Link list in c</span><br><br>
+            A linked list is a sequence of data structures, which are connected together via links. Linked List is a sequence of links which contains items. Each link contains a connection to another link. Linked list is the second most-used data structure after array.
+<br><br>A Linked List is a dynamic data structure which contains memory blocks occupying random memory locations. The elements in the linked list are called nodes. The C programs in this section focuses on the creation of a linked list and displays the elements(nodes) of a Linked List.
+
+            <br>
+            </div>
+             <h5 align="left"><B><span style="font-size: 40px;"><sub>*</sub></span> Create a Linked List & Display the Elements in the List.</B></h5>
+
+              <div align="center" class="theory1"> 
+            This C Program create a linked list & display the elements in the list. Linked list is an ordered set of data elements, each containing a link to its successor. This program is to create a linked list and display all the elements present in the created list.
+<br>Here is source code of the C program to create a linked list & display the elements in the list. The C program is successfully compiled and run on a Linux system. The program output is also shown below.
+
+            <br>
+            </div>
+
+
+             <h5 align="left"><B>Input :</B></h5>
+              <div class="pro-sub" align="left">
+                 #include<span><<span>stdio</span></span><span>.h</span><span>><span> 
+                 <br> #include<span><<span>conio</span></span><span>.h</span><span>><span> 
+                  #include <stdio.h>
+ <br> #include<span><<span>malloc</span></span><span>.h</span><span>><span> 
+ <br> #include<span><<span>stdlib</span></span><span>.h</span><span>><span> 
+
+
+                  <br> struct node
+                    <br>  {
+                  <br> int num;
+                  <br> struct node *ptr;
+                    <br>  };
+                  <br>   typedef struct node NODE;
+                 <br> <br> void main()
+                    <br>  {
+                    
+                  <br>   NODE *head, *first, *temp = 0;
+                  <br>     int count = 0;
+                  <br>   int choice = 1;
+                  <br>   first = 0;
+                    <br>  clrscr();
+                    <br>  while (choice)
+                  <br>   {
+                  <br> head  = (NODE *)malloc(sizeof(NODE));
+                  <br> printf("Enter the data item\n");
+                  <br> scanf("%d", &head-> num);
+                  <br> if (first != 0)
+                    <br>{
+                  <br>     temp->ptr = head;
+                  <br>     temp = head;
+                  <br> }
+                  <br> else
+                  <br> {
+                  <br>     first = temp = head;
+                  <br>  }
+                  <br>  fflush(stdin);
+                  <br> printf("Do you want to continue(Type 0 or 1)?\n");
+                  <br>  scanf("%d", &choice);
+                    <br>
+                  <br>   }
+                    <br>  temp->ptr = 0;
+                    <br>  /*  reset temp to the beginning */
+                  <br>   temp = first;
+                  <br>   printf("\n status of the linked list is\n");
+                  <br> while (temp != 0)
+                  <br>   {
+                  <br> printf("%d=>", temp->num);
+                  <br> count++;
+                  <br> temp = temp -> ptr;
+                  <br>   }
+                  <br>   printf("NULL\n");
+                  <br>   printf("No. of nodes in the list = %d\n", count);
+                  <br> getch();
+                  <br>}
+
+              </div>
+
+              <h5 align="left"><B>Output :</B></h5>
+              <div class="pro-sub" align="left">
+                 
+              Enter the data item
+              <br>1
+              <br>Do you want to continue(Type 0 or 1)?
+              <br>1
+                <br>Enter the data item
+              <br>2
+              <br>Do you want to continue(Type 0 or 1)?
+              <br>1
+                <br>Enter the data item
+              <br>3
+              <br>Do you want to continue(Type 0 or 1)?
+              <br>0
+              <br><br>
+              status of the linked list is
+              <br>1=>2=>3=>NULL
+              <br>No. of nodes in the list = 3
+
+              </div><br>
+
+              <div align="center" class="theory">
+         <span style="font-size: 20px;color: #000;">Link list in c
+        There are three common types of Linked List.<br>
+<br>1.  Singly Linked List
+<br>2.  Doubly Linked List
+<br>3.  Circular Linked List
+            </span>     <br><br>
+            </div>
+
+         </div>
+         <div class="def">
+            <div align="center" class="theory">
+              <span style="font-size: 25px;color: #000;"> Singly Linked List</span><br><br>
+       It is the most common. Each node has data and a pointer to the next node.
+       <br>
+          <img src="img\likl.jpg">
+
+         </div>
+             <h5 align="left"><B><span style="font-size: 40px;"><sub>*</sub></span> write program to Singly Linked List( Insert, Delete, Display and Count)</B></h5>
+             <h5 align="left"><B>Input :</B></h5>
+              <div class="pro-sub" align="left">
+                 #include<span><<span>stdio</span></span><span>.h</span><span>><span> 
+                 <br> #include<span><<span>conio</span></span><span>.h</span><span>><span>
+                  <br> #include<span><<span>malloc</span></span><span>.h</span><span>><span> 
+ <br> #include<span><<span>stdlib</span></span><span>.h</span><span>><span> 
+                          <br>       struct node 
+                          <br>{
+                <br> int value;
+                <br> struct node *next;
+                <br>};
+                <br>
+                <br>void insert();
+                <br>void display();
+                <br>void delete();
+                <br>int count();
+                <br>
+                <br>typedef struct node DATA_NODE;
+                <br>
+                <br>DATA_NODE *head_node, *first_node, *temp_node = 0, *prev_node, next_node;
+                <br>int data;<br>
+                 <br> void main() 
+                  
+                 <br>{
+                
+                  <br>int option = 0;
+                  <br>clrscr();
+                  <br>printf("Singly Linked List Example - All Operations\n");
+                <br>
+                  <br>while (option < 5)
+                  <br> {
+                
+                  <br> printf("\nOptions\n");
+                  <br> printf("1 : Insert into Linked List \n");
+                  <br> printf("2 : Delete from Linked List \n");
+                  <br> printf("3 : Display Linked List\n");
+                  <br> printf("4 : Count Linked List\n");
+                  <br> printf("Others : Exit()\n");
+                  <br> printf("Enter your option:");
+                  <br> scanf("%d", &option);
+                  <br>
+                  <br> switch (option)
+                  <br> {
+                  <br>   case 1:
+                  <br>insert();
+                <br> break;<br>
+                  <br>   case 2:
+                <br> delete();
+                <br> break;<br>
+                  <br>    case 3:
+                  <br>display();
+                <br> break;<br>
+                  <br>    case 4:
+                  <br>count();
+                  <br>break;<br>
+                <br>     default:
+                  <br>break;
+                  <br>  }
+                  <br>}
+              
+                <br> getch();
+                <br>}
+                <br>
+                <br>void insert()
+                <br> {
+                <br> printf("\nEnter Element for Insert Linked List : \n");
+                  <br>scanf("%d", &data);
+                <br>
+                  <br>temp_node = (DATA_NODE *) malloc(sizeof (DATA_NODE));
+
+                  <br>temp_node->value = data;
+
+                <br>if (first_node == 0) 
+                <br>{
+                <br> first_node = temp_node;
+                <br>}
+                <br> else 
+                <br>{
+                <br> head_node->next = temp_node;
+              <br> }
+              <br> temp_node->next = 0;
+                <br>head_node = temp_node;
+                <br>fflush(stdin);
+              <br>}
+              <br>
+              <br>void delete()
+              <br> {
+                <br>int countvalue, pos, i = 0;
+              <br> countvalue = count();
+                <br>temp_node = first_node;
+                <br>printf("\nDisplay Linked List : \n");
+              <br>
+                <br>printf("\nEnter Position for Delete Element : \n");
+              <br> scanf("%d", &pos);
+              <br>
+              <br> if (pos > 0 && pos <= countvalue) 
+              <br>{
+                <br> if (pos == 1) 
+                <br>{
+                  <br>  temp_node = temp_node -> next;
+                  <br>  first_node = temp_node;
+                  <br> printf("\nDeleted Successfully \n\n");
+                <br>  }
+                <br> else 
+                <br>{
+                  <br>  while (temp_node != 0)
+                  <br> {
+                  <br>    if (i == (pos - 1))
+                  <br> {
+                    <br>    prev_node->next = temp_node->next;
+                    <br>   if(i == (countvalue - 1))
+                      <br>  {
+                    <br>  head_node = prev_node;
+                  <br> }
+                    <br>    printf("\nDeleted Successfully \n\n");
+                  <br>     break;
+                              <br>  } 
+                  <br>else
+                  <br> {
+                    <br>    i++;
+                    <br>    prev_node = temp_node;
+                  <br>     temp_node = temp_node -> next;
+                <br>     }
+                <br>   }
+                <br> }
+                <br>} else
+                <br>  printf("\nInvalid Position \n\n");
+              <br>}
+              <br>
+              <br>void display() 
+              <br>{
+              <br> int count = 0;
+              <br> temp_node = first_node;
+              <br> printf("\nDisplay Linked List : \n");
+              <br> while (temp_node != 0) 
+              <br>{
+                <br>  printf("# %d # ", temp_node->value);
+              <br>   count++;
+              <br>   temp_node = temp_node -> next;
+              <br> }
+                <br>printf("\nNo Of Items In Linked List : %d\n", count);
+              <br>}
+              <br>
+              <br>int count()
+              <br> {
+              <br>  int count = 0;
+              <br> temp_node = first_node;
+              <br>  while (temp_node != 0) 
+              <br>{
+              <br>   count++;
+                <br>  temp_node = temp_node -> next;
+              <br> }
+                <br>printf("\nNo Of Items In Linked List : %d\n", count);
+               <br> getch();
+                 <br> }
+              </div>
+
+              <h5 align="left"><B>Output :</B></h5>
+              <div class="pro-sub" align="left">
+               Singly Linked List Example - All Operations<br>
+<br>
+        Options<br>
+        1 : Insert into Linked List<br>
+        2 : Delete from Linked List<br>
+        3 : Display Linked List<br>
+        4 : Count Linked List<br>
+        Others : Exit()<br>
+        Enter your option:1<br>
+<br>
+        Enter Element for Insert Linked List :<br>
+100<br>
+<br>
+Options<br>
+1 : Insert into Linked List<br>
+2 : Delete from Linked List<br>
+3 : Display Linked List<br>
+4 : Count Linked List<br>
+Others : Exit()<br>
+Enter your option:1<br>
+<br>
+Enter Element for Insert Linked List :<br>
+200<br>
+<br>
+Options<br>
+1 : Insert into Linked List<br>
+2 : Delete from Linked List<br>
+3 : Display Linked List<br>
+4 : Count Linked List<br>
+Others : Exit()<br>
+Enter your option:1<br>
+<br>
+Enter Element for Insert Linked List :<br>
+300<br>
+<br>
+Options<br>
+1 : Insert into Linked List<br>
+2 : Delete from Linked List<br>
+3 : Display Linked List<br>
+4 : Count Linked List<br>
+Others : Exit()<br>
+Enter your option:3<br>
+<br>
+Display Linked List :<br>
+# 100 # # 200 # # 300 #<br>
+<br>
+Options<br>
+1 : Insert into Linked List<br>
+2 : Delete from Linked List<br>
+3 : Display Linked List<br>
+4 : Count Linked List<br>
+Others : Exit()<br>
+Enter your option:4<br>
+<br>
+No Of Items In Linked List : 3<br>
+<br>
+Options<br>
+1 : Insert into Linked List<br>
+2 : Delete from Linked List<br>
+3 : Display Linked List<br>
+4 : Count Linked List<br>
+Others : Exit()<br>
+Enter your option:2<br>
+<br>
+Enter Position for Delete Element :<br>
+2<br>
+<br>
+Deleted Successfully<br>
+<br>
+
+Options<br>
+1 : Insert into Linked List<br>
+2 : Delete from Linked List<br>
+3 : Display Linked List<br>
+4 : Count Linked List<br>
+Others : Exit()<br>
+Enter your option:3<br>
+<br>
+Display Linked List :<br>
+# 100 # # 300 # <br>
+<br>
+Options<br>
+1 : Insert into Linked List<br>
+2 : Delete from Linked List<br>
+3 : Display Linked List<br>
+4 : Count Linked List<br>
+Others : Exit()<br>
+Enter your option: Press any key to exit.<br>
+
+              </div>
+         
+       
+           
+          <br>
+       </div>
+        
+
+       <div class="def">
+            <div align="center" class="theory">
+              <span style="font-size: 25px;color: #000;"> Doubly Linked List</span><br><br>
+       We add a pointer to the previous node in a doubly linked list. Thus, we can go in either direction: forward or backward.
+
+       A doubly linked list is a linked data structure that consists of a set of sequentially linked records called nodes. Each node contains two fields, called links, that are references to the previous and to the next node in the sequence of nodes.<br>
+       <br>
+          <img src="img\likd.jpg" style="width: 100%; height: 20%">
+         
+         </div>
+             <h5 align="left"><B><span style="font-size: 40px;"><sub>*</sub></span> Write a program to implement following operations in a linked list<br>
+       1. Append an Element 2. Add at beginning 3. Remove 4. Display.</B></h5>
+             <h5 align="left"><B>Input :</B></h5>
+              <div class="pro-sub" align="left">
+                 #include<span><<span>stdio</span></span><span>.h</span><span>><span> 
+                 <br> #include<span><<span>conio</span></span><span>.h</span><span>><span> <br>
+                   #include<span><<span>stdlib</span></span><span>.h</span><span>><span> <br><br>
+                  /* structure representing a node of the doubly linked list */<br>
+struct dnode<br>
+{<br>
+    struct dnode *prev;<br>
+    int data;<br>
+    struct dnode *next;<br>
+};<br>
+<br>
+struct dnode *start = NULL;<br>
+<br>
+void append(int);<br>
+void remov(int);<br>
+void display();<br>
+                 <br> void main() 
+                 <br> {<br>
+                         int n, ch;<br>
+clrscr();<br>
+    do<br>
+    {<br>
+        printf("\n\nOperations on doubly linked list");<br>
+        printf("\n1. Append \n2. Add at beginning \n3. Remove\n4. Display\n0. Exit\n");<br>
+        printf("\nEnter Choice 0-4? : ");<br>
+        scanf("%d", &ch);<br><br>
+        switch (ch)<br>
+        {<br>
+            case 1:<br>
+                printf("\nEnter number: ");<br>
+                scanf("%d", &n);<br>
+                append(n);<br>
+                break;<br><br>
+            case 2:<br>
+                printf("\nEnter number: ");<br>
+                scanf("%d", &n);<br>
+                addatbeg(n);<br>
+                break;<br><br>
+            case 3:<br>
+              printf("\nEnter number to delete: ");<br>
+                scanf("%d", &n);<br>
+                remov(n);<br>
+                break;<br><br>
+            case 4:<br>
+                display();<br>
+                break;<br>
+        }<br>
+    }<br><br>
+    while (ch != 0);<br>
+}<br>
+<br>
+void append(int num)<br>
+{<br>
+    struct dnode *nptr,  *temp = start;<br>
+<br>
+   
+    nptr = malloc(sizeof(struct dnode));<br>
+    nptr->data = num;<br>
+    nptr->next = NULL;<br>
+    nptr->prev = NULL;<br>
+<br>
+ 
+    if (start == NULL)<br>
+    {<br>
+        start = nptr;<br>
+    } <br>
+    else<br>
+    {<br>
+     
+        while (temp->next != NULL)<br>
+            temp = temp->next;<br>
+<br>
+        nptr->prev = temp;<br>
+        temp->next = nptr;<br>
+    }<br>
+}<br>
+<br>
+void addatbeg(int num)<br>
+{<br>
+    struct dnode *nptr;<br>
+<br>
+   
+    nptr = malloc(sizeof(struct dnode));<br>
+<br>
+  
+    nptr->prev = NULL;<br>
+    nptr->data = num;<br>
+    nptr->next = start;<br>
+<br><br>
+    if (start != NULL)<br>
+        start->prev = nptr;<br>
+    start = nptr;<br>
+}<br>
+
+<br>
+
+void remov(int num)<br>
+{<br>
+    struct dnode *temp = start;<br>
+<br>
+    
+    while (temp != NULL)<br>
+    {<br>
+        
+        if (temp->data == num)<br>
+        {<br>
+            
+            if (temp == start)<br>
+            {
+                start = start->next;<br>
+                start->prev = NULL;<br>
+            } <br><br>
+            else<br>
+            {<br>
+               
+                if (temp->next == NULL)<br>
+                    temp->prev->next = NULL;<br><br>
+                else<br>
+                
+                {<br>
+                    temp->prev->next = temp->next;<br>
+                    temp->next->prev = temp->prev;<br>
+                }<br>
+                free(temp);<br>
+            }<br>
+            return ;<br>
+        }<br>
+        temp = temp->next;<br>
+    }<br>
+    printf("\n%d not found.", num);<br>
+}<br>
+<br>
+<br>
+void display()<br>
+{<br>
+  struct dnode *temp = start;<br>
+    printf("\n");<br>
+<br>
+    <br>
+    while (temp != NULL)<br>
+    {<br>
+        printf("%d\t", temp->data);<br>
+        temp = temp->next;<br>
+    } <br>
+                       <br> getch();
+                 <br> }
+              </div>
+
+              <h5 align="left"><B>Output :</B></h5>
+              <div class="pro-sub" align="left">
+               <br>Operation on doubly ,linked list
+         <br>1. Append
+         <br>2. Add at begining
+         <br>3. Remove
+         <br>4. Display
+         <br>0. Exit
+         <br><br>
+         Enter Choice 0-4? : 1
+         <br><br>
+         Enter number: 12
+         <br><br>
+          <br>Operation on doubly ,linked list
+         <br>1. Append
+         <br>2. Add at begining
+         <br>3. Remove
+         <br>4. Display
+         <br>0. Exit
+         <br><br>
+         Enter Choice 0-4? : 1
+         <br><br>
+         Enter number: 13
+         <br><br>
+          <br>Operation on doubly ,linked list
+         <br>1. Append
+         <br>2. Add at begining
+         <br>3. Remove
+         <br>4. Display
+         <br>0. Exit
+         <br><br>
+         Enter Choice 0-4? : 1
+         <br><br>
+         Enter number: 14
+         <br><br>
+           <br>Operation on doubly ,linked list
+         <br>1. Append
+         <br>2. Add at begining
+         <br>3. Remove
+         <br>4. Display
+         <br>0. Exit
+         <br><br>
+         Enter Choice 0-4? : 2
+         <br><br>
+         Enter number: 11
+         <br><br>
+          <br>Operation on doubly ,linked list
+         <br>1. Append
+         <br>2. Add at begining
+         <br>3. Remove
+         <br>4. Display
+         <br>0. Exit
+         <br><br>
+         Enter Choice 0-4? : 3
+         <br><br>
+         Enter number to delete: 12
+         <br><br><br>
+          <br>Operation on doubly ,linked list
+         <br>1. Append
+         <br>2. Add at begining
+         <br>3. Remove
+         <br>4. Display
+         <br>0. Exit
+         <br><br>
+         Enter Choice 0-4? : 4
+         <br><br>
+          11  13   14
+         <br><br>
+          <br>Operation on doubly ,linked list
+         <br>1. Append
+         <br>2. Add at begining
+         <br>3. Remove
+         <br>4. Display
+         <br>0. Exit
+         <br><br>
+         Enter Choice 0-4? : 0
+         <br><br>
+         Exit to display
+          <br>
+              </div>
+        <br>
+       </div>
+
+       <div class="def">
+            <div align="center" class="theory">
+              <span style="font-size: 25px;color: #000;"> circular Linked List</span><br><br>
+     A circular linked list is a variation of linked list in which the last element is linked to the first element. This forms a circular loop.<BR>
+     A circular linked list is a linked list in which the last node points to the head or front node making the data structure to look like a circle.  A circularly linked list node can be implemented using singly linked or doubly linked list.
+       <br><br>
+          <img src="img\likc.jpg">
+         </div>
+             <h5 align="left"><B><span style="font-size: 40px;"><sub>*</sub></span> Example to circular linked list.</B></h5>
+             <h5 align="left"><B>Input :</B></h5>
+              <div class="pro-sub" align="left">
+                 #include<span><<span>stdio</span></span><span>.h</span><span>><span> 
+                 <br> #include<span><<span>conio</span></span><span>.h</span><span>><span><br> 
+                   #include<span><<span>stdlib</span></span><span>.h</span><span>><span> <br><br>
+                    typedef struct Node<br>
+ 
+{<br>
+  int info;<br>
+  struct Node *next;<br>
+}node;<br>
+ <br>
+node *front=NULL,*rear=NULL,*temp;<br>
+ <br>
+void create();<br>
+void del();<br>
+void display();<br>
+                 <br> void main() 
+                 <br> {<br>
+                int chc;
+                        <br>clrscr();<br>
+                     do<br>
+  {<br>
+  printf("\nMenu\n\t 1 Create the element : ");<br>
+  printf("\n\t 2 Delete the element : ");<br>
+  printf("\n\t 3 Display the queue : ");<br>
+  printf("\n\t 4 Exit from main : ");<br>
+  printf("\nEnter your choice : ");<br>
+  scanf("%d",&chc);<br>
+  <br>
+    switch(chc)<br>
+    {<br>
+      case 1:<br>
+      create();<br>
+      break;<br>
+    <br>
+      case 2:<br>
+      del();<br>
+      break;<br>
+   <br>
+      case 3:<br>
+      display();<br>
+      break;<br>
+   <br>
+      case 4:<br>
+      return 1;<br>
+      <br>
+      default:<br>
+        printf("\nInvalid choice :");<br>
+    }<br>
+  }while(1);<br>
+ getch();<br>
+ }<br>
+ <br>
+void create()<br>
+{<br>
+  node *newnode;<br>
+  newnode=(node*)malloc(sizeof(node));<br>
+  printf("\nEnter the node value : ");<br>
+  scanf("%d",&newnode->info);<br>
+  newnode->next=NULL;<br>
+  if(rear==NULL)<br>
+  front=rear=newnode;<br>
+  else<br>
+  {<br>
+    rear->next=newnode;<br>
+    rear=newnode;<br>
+  }<br>
+  <br>
+  rear->next=front;<br>
+}<br>
+ <br>
+void del()<br>
+{<br>
+  temp=front;<br>
+  if(front==NULL)<br>
+    printf("\nUnderflow :");<br>
+  else<br>
+  {<br>
+    if(front==rear)<br>
+    {<br>
+      printf("\n%d",front->info);<br>
+      front=rear=NULL;<br>
+    }<br>
+    else<br>
+    {<br>
+      printf("\n%d",front->info);<br>
+      front=front->next;<br>
+      rear->next=front;<br>
+    }<br>
+ <br>
+  temp->next=NULL;<br>
+  free(temp);<br>
+  }<br>
+}<br>
+ <br>
+void display()<br>
+{<br>
+  temp=front;<br>
+  if(front==NULL)<br>
+    printf("\nEmpty");<br>
+  else<br>
+  {<br>
+    printf("\n");<br>
+    for(;temp!=rear;temp=temp->next)<br>
+      printf("\n%d address=%u next=%u\t",temp->info,temp,temp->next);<br>
+      printf("\n%d address=%u next=%u\t",temp->info,temp,temp->next);<br>
+  }<br>
+            
+              </div>
+
+              <h5 align="left"><B>Output :</B></h5>
+              <div class="pro-sub" align="left">
+              <br>Menu<br>
+              1 Create the element :<br>
+               2 Delete the element :<br>
+                3 Display the queue :<br>
+                 4 Exit from main:<br>
+                 Enter your choice : 1<br><br>
+                 Enter the node value : 10<br><br>
+              Menu<br>
+              1 Create the element :<br>
+               2 Delete the element :<br>
+                3 Display the queue :<br>
+                 4 Exit from main:<br>
+                 Enter your choice : 1<br><br>
+                 Enter the node value : 11<br><br>   
+                   Menu<br>
+              1 Create the element :<br>
+               2 Delete the element :<br>
+                3 Display the queue :<br>
+                 4 Exit from main:<br>
+                 Enter your choice : 1<br><br>
+                 Enter the node value : 12<br><br>   
+                   Menu<br>
+              1 Create the element :<br>
+               2 Delete the element :<br>
+                3 Display the queue :<br>
+                 4 Exit from main:<br>
+                 Enter your choice : 1<br><br>
+                 Enter the node value : 13<br><br>   
+                   Menu<br>
+              1 Create the element :<br>
+               2 Delete the element :<br>
+                3 Display the queue :<br>
+                 4 Exit from main:<br>
+                 Enter your choice : 2<br><br>
+               10<br>
+                 Menu<br>
+              1 Create the element :<br>
+               2 Delete the element :<br>
+                3 Display the queue :<br>
+                 4 Exit from main:<br>
+                 Enter your choice : 2<br><br>
+                11<BR>
+                  Menu<br>
+              1 Create the element :<br>
+               2 Delete the element :<br>
+                3 Display the queue :<br>
+                 4 Exit from main:<br>
+                 Enter your choice : 3<br><br>
+                13 address=2116 next=2124<br>
+                14 address=2124 next=2116<br>
+                  Menu<br>
+              1 Create the element :<br>
+               2 Delete the element :<br>
+                3 Display the queue :<br>
+                 4 Exit from main:<br>
+                 Enter your choice : 4<br><br>
+               Exit to the display
+              </div>
+          <br>
+       </div>
+
+         
+      </div>
+    
+
+
+
+  </section>
+
+  <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about" class="section-bg">
+      <div class="container-fluid">
+        <div class="section-header">
+          <h3 class="section-title">About Us</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">
+           Hello Friends, We are here provide Different Programming Languages Knowledge.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 about-img wow fadeInLeft">
+            <img src="img/about-img.jpg" alt="">
+          </div>
+
+          <div class="col-lg-6 content wow fadeInRight">
+            <h2>You already know a language. Maybe you learned it in school or probably learn it out of curiosity.</h2>
+            <h3>Every single one of those jobs you heard about was in one way or the other related to computer programming. Here’s the harsh truth.</h3>
+            <p>
+             If you have just stepped into college. which means you are still a young youth like all others, wishing to taste success in life. But you are confused.
+            </p>
+            <p>
+             We are talking about a decent level of knowledge in programming with a sound understanding of all the basic principles and concepts. If you fall into this category, We would suggest you continue with the language, whichever it might be.
+             <br>You do not wish to go hardcore into programming but would like to know at least a language that could help you develop some software in future.This might be the case if you are pursuing engineering in some other branch other than Computer Science. You do not intend to foray into the IT field but knowledge of a language is always beneficiary.<br>
+            </p>
+          </div>
+          <div style="margin-left: 15px;" class="box featured wow fadeInUp">
+            <p>The only difference being you’d like to learn a programming language to make a website of your own or probably want to get into App Development. This is very specific in the case you have already figured out that this is what you wish to do. Java is the language to pick up and go within this case. The reason is simple; Java is a highly object-oriented language that is immensely effective in the case of Web Development and App Development.
+This might be the most important one. This scenario is for the cases wherein you are really interested in what goes inside of being a good programmer. You wish to be well versed with all the theoretical knowledge, not only the application based. In such cases, We will suggest C/C++. It is harder than other languages that we have mentioned here and you will have to spend a significant amount of time learning it. But, here is the thing. Once you manage to learn it, you will be having in-depth knowledge of programming as a skill and why do we do the things we do. There are numerous other benefits as well; such as C/C++ has a much faster processing time and is the best choice if you wish to get into competitive coding.</p><br>
+            Do figure out which category do you belong to and begin your journey to be a great programmer. No matter which language you pick up, just stick to it and don’t abandon it midway. Devote your time and energy to it and see it showering you with success.
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact">
+      <div class="container">
+        <div class="row wow fadeInUp">
+
+          <div class="col-lg-4 col-md-4">
+            <div class="contact-about">
+              <h3>Programer Library</h3>
+             
+              <div class="social-links">
+                
+                <a href="https://www.instagram.com/programmer_library/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="info">
+              <div>
+                <i class="ion-ios-location-outline"></i>
+                <p>Khodiyar Nagar,Bapu Nagar<br>Ahmedabad-380024</p>
+              </div>
+
+              <div>
+                <i class="ion-ios-email-outline"></i>
+                <p>programmerlibrary111@gmail.com</p>
+              </div>
+
+              <div>
+                <i class="ion-ios-telephone-outline"></i>
+                <p>+91 7043858045</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-8">
+            <div class="form">
+              <div id="sendmessage">Your message has been sent. Thank you!</div>
+              <div id="errormessage"></div>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-row">
+                 
+                  <p style="margin-left: 30px;"><span style="color: #00acc1;">If you have any questions then ask us in our E-mail.</span><br> Also You have some solutions then tell us we will try our best to provide best materials to you.</p>
+                
+              </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="#intro" class="scrollto">Home</a>
+            <a href="#about" class="scrollto">About</a>
+           
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+ <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Programer Library</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Avilon
+    Theme URL: https://bootstrapmade.com/avilon-bootstrap-landing-page-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+   <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto"> Programer <br> <span style="font-size:17px">Library</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title=""></a> -->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+
+   <section id="intro">
+
+    <div class="intro-text">
+      <p style="margin-top: 400px;">We are provide knowledge about computer language C.</p>
+      <a href="#main" class="btn-get-started scrollto">Get Started</a>    </div>
+
+   
+    </div>
+
+  </section><!-- #intro -->
+
+
+ <section id="main" class="main">
+      <div class="pro-base" align="center">
+         <div class="def">
+            <div align="center" class="theory">
+                <span style="font-size: 25px;color: #000;">Array program</span><br><br>
+              
+               In C language, arrays are reffered to as structured data types. An array is defined as finite ordered collection of homogenous data, stored in contiguous memory locations.
+<br>
+Here the words,
+<br>
+<ul>
+  <li>finite means data range must be defined.</li>
+<li>ordered means data must be stored in continuous memory addresses.</li>
+<li>homogenous means data must be of similar data type.</li></ul>
+</div>
+             <h5 align="left"><B><span style="font-size: 40px;"><sub>*</sub></span> write program to find average with array.</B></h5>
+             <h5 align="left"><B>Input :</B></h5>
+              <div class="pro-sub" align="left">
+                 #include<span><<span>stdio</span></span><span>.h</span><span>><span> 
+                 <br> #include<span><<span>conio</span></span><span>.h</span><span>><span> 
+                 <br> void main() 
+                 <br> 
+                     
+                    <br> int marks[10], i, n, sum = 0, average;
+                     <br>clrscr();
+                  <br>    printf("Enter number of elements: ");
+                  <br>    scanf("%d", &n);
+                        <br> <span>for(i=0;i<<span>n</span>;i++)</span>
+                      <br>   {
+                  <br>   printf("Enter number%d: ",i+1);
+              <br>        scanf("%d", &marks[i]);
+                        <br>     sum += marks[i];
+                    <br>}
+                    <br>average = sum/n;
+                    <br>printf("Average = %d", average);
+                       <br> getch();
+                 <br> }
+              </div>
+
+              <h5 align="left"><B>Output :</B></h5>
+              <div class="pro-sub" align="left">
+                 
+                 Enter n: 5<br>
+                <br>Enter number1: 5
+                <br>Enter number2: 10
+                <br>Enter number3: 15
+                <br>Enter number4: 20
+                <br>Enter number5: 25<br>
+                <br>Average = 15
+
+              </div><br>
+         </div>
+         <div class="def">
+           
+                <h5 align="left"><B><span style="font-size: 40px;"><sub>*</sub></span> write program to Access Array Elements Using Pointers.</B></h5>
+             <h5 align="left"><B>Input :</B></h5>
+              <div class="pro-sub" align="left">
+                 #include<span><<span>stdio</span></span><span>.h</span><span>><span> 
+                 <br> #include<span><<span>conio</span></span><span>.h</span><span>><span> 
+                 <br> void main() 
+                 <br> {
+                        
+                     <br> int data[5], i;
+                     <br>clrscr();
+<br>   printf("Enter elements: ");
+  <br> for(i = 0; i < 5; ++i)
+  <br>   scanf("%d", data + i);
+  <br> printf("You entered: \n");
+  <br> for(i = 0; i < 5; ++i)
+      <br>printf("%d\n", *(data + i));
+                       <br> getch();
+                 <br> }
+              </div>
+
+              <h5 align="left"><B>Output :</B></h5>
+              <div class="pro-sub" align="left">
+          <br>      Enter elements: 1
+<br>2
+  <br>3
+<br>5
+<br>4<br>
+<br>You entered: 
+<br>1
+<br>2
+<br>3
+<br>5
+<br>4
+              </div>
+         
+       
+         
+          <br>
+       </div>
+         <div class="def">
+           
+             <h5 align="left"><B><span style="font-size: 40px;"><sub>*</sub></span> Write program to Display Largest Element of an array.</B></h5>
+            
+             <h5 align="left"><B>Input :</B></h5>
+              <div class="pro-sub" align="left">
+                 #include<span><<span>stdio</span></span><span>.h</span><span>><span> 
+                 <br> #include<span><<span>conio</span></span><span>.h</span><span>><span> 
+                 <br> void main() 
+                 <br> {
+                          <br> int i, n;
+   <br> float arr[100];
+
+                         <br>clrscr();
+<br>    printf("Enter total number of elements(1 to 100): ");
+   <br> scanf("%d", &n);
+<br>    printf("\n");
+   
+  <br>  for(i = 0; i < n; ++i)
+   <br> {
+     <br>  printf("Enter Number %d: ", i+1);
+      <br> scanf("%f", &arr[i]);
+    <br>}
+   
+    <br>for(i = 1; i < n; ++i)
+    <br>{
+      
+       <br>if(arr[0] < arr[i])
+           <br>arr[0] = arr[i];
+ <br>   }
+    <br>printf("Largest element = %.2f", arr[0]);
+
+                       <br> getch();
+                 <br> }
+              </div>
+
+              <h5 align="left"><B>Output :</B></h5>
+              <div class="pro-sub" align="left">
+                 
+                 Enter total number of elements(1 to 100): 8
+<br>Enter Number 1: 23.4
+<br>Enter Number 2: -34.5
+<br>Enter Number 3: 50
+<br>Enter Number 4: 33.5
+<br>Enter Number 5: 55.5
+<br>Enter Number 6: 43.7
+<br>Enter Number 7: 5.7
+<br>Enter Number 8: -66.5
+              </div><br>
+                <div align="center" class="theory1" style="margin-top: 0px;">
+              <span style="font-size: 25px;color: #000;"></span><span style="font-size: 40px;"><sub>*</sub></span> This program takes n number of elements from user and stores it in array arr[].
+
+<br><span style="font-size: 40px;"><sub>*</sub></span> To find the largest element, the first two elements of array are checked and largest of these two element is placed in arr[0].
+
+<br><span style="font-size: 40px;"><sub>*</sub></span> Then, the first and third elements are checked and largest of these two element is placed in arr[0].
+
+<br>
+            </div> 
+         </div>
+         
+
+
+         <div class="def">
+            <div align="center" class="theory">
+              <span style="font-size: 25px;color: #000;">Add Two Matrices</span><br><br>
+        <br>    In this program, user is asked to entered the number of rows r and columns c. The value of r and c should be less than 100 in this program.
+<br>The user is asked to enter elements of two matrices (of order r*c).
+<br>Then, the program adds these two matrices, saves it in another matrix (two-dimensional array) and displays it on the screen.
+
+<br>
+            </div>
+             <h5 align="left"><B><span style="font-size: 40px;"><sub>*</sub></span> write program to Program to Add Two Matrices.</B></h5>
+             <h5 align="left"><B>Input :</B></h5>
+              <div class="pro-sub" align="left">
+                 #include<span><<span>stdio</span></span><span>.h</span><span>><span> 
+                 <br> #include<span><<span>conio</span></span><span>.h</span><span>><span> 
+                 <br> void main() 
+                 <br> {
+                      
+             <br>  int r, c, a[100][100], b[100][100], sum[100][100], i, j;
+               <br>clrscr();
+    <br>printf("Enter number of rows (between 1 and 100): ");
+   <br> scanf("%d", &r);
+   <br> printf("Enter number of columns (between 1 and 100): ");
+   <br> scanf("%d", &c);
+   <br> printf("\nEnter elements of 1st matrix:\n");
+   <br> for(i=0; i<<span>r; ++i)</span>
+     <br>   for(j=0; j<<span>c; ++j)</span>
+  <br>      {
+         <br>   printf("Enter element a%d%d: ",i+1,j+1);
+         <br>   scanf("%d",&a[i][j]);
+     <br>   }
+   <br> printf("Enter elements of 2nd matrix:\n");
+   <br> for(i=0; i<<span>r; ++i)</span>
+   <br>     for(j=0; j<<span>c; ++j)</span>
+    <br>    {
+     <br>       printf("Enter element a%d%d: ",i+1, j+1);
+     <br>       scanf("%d", &b[i][j]);
+     <br>   }
+  
+ <br>   for(i=0;i<<span>r; ++i)</span>
+     <br>   for(j=0;j<<span>c; ++j)</span>
+     <br>   {
+       <br>     sum[i][j]=a[i][j]+b[i][j];
+      <br>  }
+   <br> printf("\nSum of two matrices: \n");
+  <br>  for(i=0;i<<span>r; ++i)</span>
+     <br>   for(j=0;j<<span>c; ++j)</span>
+     <br>   {
+         <br>   if(j==c-1)
+         <br>   {
+         <br>       printf("\n\n");
+         <br>   }
+     <br>   }
+                       <br> getch();
+                 <br> }
+              </div>
+
+              <h5 align="left"><B>Output :</B></h5>
+              <div class="pro-sub" align="left">
+                 
+          <br>       Enter number of rows (between 1 and 100): 2
+<br>Enter number of columns (between 1 and 100): 3
+
+<br>Enter elements of 1st matrix:
+<br>Enter element a11: 3
+<br>Enter element a12: 5
+<br>Enter element a13: 8
+<br>Enter element a21: 3
+<br>Enter element a22: 6
+<br>Enter element a23: 2
+<br>Enter elements of 2nd matrix:
+<br>Enter element a11: -4
+<br>Enter element a12: 9
+<br>Enter element a13: 3
+<br>Enter element a21: 9
+<br>Enter element a22: 2
+<br>Enter element a23: 4
+<br>
+<br>Sum of two matrices: 
+<br>-1 &nbsp;14 &nbsp;11   
+<br>
+<br>12 &nbsp; 8  &nbsp; 6 
+              </div><br>
+         </div>
+
+     
+
+        <div class="def">
+            <div align="center" class="theory">
+              <span style="font-size: 25px;color: #000;">Multiply to Matrix Using Multi-dimensional Arraysc</span><br><br>
+              This program takes two matrices of order r1*c1 and r2*c2 respectively. Then, the program multiplies these two matrices (if possible) and displays it on the screen.<br>
+              To multiply two matrices, the number of columns of first matrix should be equal to the number of rows to second matrix. This program displays the error until the number of columns of first matrix is equal to the number of rows of second matrix.<br>
+            </div>
+             <h5 align="left"><B><span style="font-size: 40px;"><sub>*</sub></span> Program to Multiply Two Matrices.</B></h5>
+             <h5 align="left"><B>Input :</B></h5>
+              <div class="pro-sub" align="left">
+                 #include<span><<span>stdio</span></span><span>.h</span><span>><span> 
+                 <br> #include<span><<span>conio</span></span><span>.h</span><span>><span> 
+                 <br> void main() 
+                 <br> {
+                       
+                 <br>int a[10][10], b[10][10], result[10][10], r1, c1, r2, c2, i, j, k;
+                  <br>clrscr();
+   <br> printf("Enter rows and column for first matrix: ");
+   <br> scanf("%d %d", &r1, &c1);
+   <br> printf("Enter rows and column for second matrix: ");
+<br>scanf("%d %d",&r2, &c2);
+  
+  <br>  while (c1 != r2)
+  <br>  {
+   <br>     printf("Error! column of first matrix not equal to row of second.\n\n");
+    <br>    printf("Enter rows and column for first matrix: ");
+     <br>  scanf("%d %d", &r1, &c1);
+      <br>  printf("Enter rows and column for second matrix: ");
+       <br> scanf("%d %d",&r2, &c2);
+  <br>  }
+  
+   <br> printf("\nEnter elements of matrix 1:\n");
+   <br> for(i=0; i<<span>r1; ++i)</span>
+   <br>     for(j=0; j<<span>c1; ++j)</span>
+     <br>   {
+    <br>        printf("Enter elements a%d%d: ",i+1, j+1);
+     <br>       scanf("%d", &a[i][j]);
+     <br>   }
+ 
+   <br> printf("\nEnter elements of matrix 2:\n");
+   <br> for(i=0; i<<span>r2; ++i)
+   <br>     for(j=0; j<<span>c2; ++j)
+     <br>   {
+     <br>       printf("Enter elements b%d%d: ",i+1, j+1);
+        <br>    scanf("%d",&b[i][j]);
+      <br>  }
+  
+  <br>  for(i=0; i<<span>r1; ++i)
+    <br>    for(j=0; j<<span>c2; ++j)
+    <br>    {
+     <br>       result[i][j] = 0;
+     <br>   }
+   
+   <br> for(i=0; i<<span>r1; ++i)
+      <br>  for(j=0; j<<span>c2; ++j)
+       <br>     for(k=0; k<<span>c1; ++k)
+           <br> {
+           <br>     result[i][j]+=a[i][k]*b[k][j];
+         <br>   }
+   
+  <br>  printf("\nOutput Matrix:\n");
+   <br> for(i=0; i<<span>r1; ++i)
+    <br>    for(j=0; j<<span>c2; ++j)
+    <br>    {
+       <br>     printf("%d  ", result[i][j]);
+      <br>      if(j == c2-1)
+         <br>       printf("\n\n");
+        <br>}
+        <br>               getch();
+                 <br> }
+              </div>
+
+              <h5 align="left"><B>Output :</B></h5>
+              <div class="pro-sub" align="left">
+                 
+               <br>     Enter rows and column for first matrix: 3
+ <br> 2
+ <br> Enter rows and column for second matrix: 3
+ <br> 2
+ <br> Error! column of first matrix not equal to row of second.
+ <br> 
+ <br> Enter rows and column for first matrix: 2
+ <br> 3
+ <br> Enter rows and column for second matrix: 3
+ <br> 2
+ <br> 
+ <br> Enter elements of matrix 1:
+ <br> Enter elements a11: 3
+ <br> Enter elements a12: -2
+ <br> Enter elements a13: 5
+ <br> Enter elements a21: 3
+ <br> Enter elements a22: 0
+ <br> Enter elements a23: 4
+ <br> 
+ <br> Enter elements of matrix 2:
+ <br> Enter elements b11: 2
+ <br> Enter elements b12: 3
+ <br> Enter elements b21: -9
+ <br> Enter elements b22: 0
+ <br> Enter elements b31: 0
+ <br> Enter elements b32: 4
+ <br> 
+ <br> Output Matrix:
+ <br> 24 &nbsp; 29
+
+ <br> 6   &nbsp;&nbsp;&nbsp; 25
+              </div><br>
+         </div>
+      </div>
+    
+
+
+
+  </section>
+
+ <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about" class="section-bg">
+      <div class="container-fluid">
+        <div class="section-header">
+          <h3 class="section-title">About Us</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">
+           Hello Friends, We are here provide Different Programming Languages Knowledge.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 about-img wow fadeInLeft">
+            <img src="img/about-img.jpg" alt="">
+          </div>
+
+          <div class="col-lg-6 content wow fadeInRight">
+            <h2>You already know a language. Maybe you learned it in school or probably learn it out of curiosity.</h2>
+            <h3>Every single one of those jobs you heard about was in one way or the other related to computer programming. Here’s the harsh truth.</h3>
+            <p>
+             If you have just stepped into college. which means you are still a young youth like all others, wishing to taste success in life. But you are confused.
+            </p>
+            <p>
+             We are talking about a decent level of knowledge in programming with a sound understanding of all the basic principles and concepts. If you fall into this category, We would suggest you continue with the language, whichever it might be.
+             <br>You do not wish to go hardcore into programming but would like to know at least a language that could help you develop some software in future.This might be the case if you are pursuing engineering in some other branch other than Computer Science. You do not intend to foray into the IT field but knowledge of a language is always beneficiary.<br>
+            </p>
+          </div>
+          <div style="margin-left: 15px;" class="box featured wow fadeInUp">
+            <p>The only difference being you’d like to learn a programming language to make a website of your own or probably want to get into App Development. This is very specific in the case you have already figured out that this is what you wish to do. Java is the language to pick up and go within this case. The reason is simple; Java is a highly object-oriented language that is immensely effective in the case of Web Development and App Development.
+This might be the most important one. This scenario is for the cases wherein you are really interested in what goes inside of being a good programmer. You wish to be well versed with all the theoretical knowledge, not only the application based. In such cases, We will suggest C/C++. It is harder than other languages that we have mentioned here and you will have to spend a significant amount of time learning it. But, here is the thing. Once you manage to learn it, you will be having in-depth knowledge of programming as a skill and why do we do the things we do. There are numerous other benefits as well; such as C/C++ has a much faster processing time and is the best choice if you wish to get into competitive coding.</p><br>
+            Do figure out which category do you belong to and begin your journey to be a great programmer. No matter which language you pick up, just stick to it and don’t abandon it midway. Devote your time and energy to it and see it showering you with success.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+<!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact">
+      <div class="container">
+        <div class="row wow fadeInUp">
+
+          <div class="col-lg-4 col-md-4">
+            <div class="contact-about">
+              <h3>Programer Library</h3>
+             
+              <div class="social-links">
+                
+                <a href="https://www.instagram.com/programmer_library/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="info">
+              <div>
+                <i class="ion-ios-location-outline"></i>
+                <p>Khodiyar Nagar,Bapu Nagar<br>Ahmedabad-380024</p>
+              </div>
+
+              <div>
+                <i class="ion-ios-email-outline"></i>
+                <p>programmerlibrary111@gmail.com</p>
+              </div>
+
+              <div>
+                <i class="ion-ios-telephone-outline"></i>
+                <p>+91 7043858045</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-8">
+            <div class="form">
+              <div id="sendmessage">Your message has been sent. Thank you!</div>
+              <div id="errormessage"></div>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-row">
+                 
+                  <p style="margin-left: 30px;"><span style="color: #00acc1;">If you have any questions then ask us in our E-mail.</span><br> Also You have some solutions then tell us we will try our best to provide best materials to you.</p>
+                
+              </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="#intro" class="scrollto">Home</a>
+            <a href="#about" class="scrollto">About</a>
+            
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+ <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

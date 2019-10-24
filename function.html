@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Programer Library</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Avilon
+    Theme URL: https://bootstrapmade.com/avilon-bootstrap-landing-page-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+   <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto"> Programer <br> <span style="font-size:17px">Library</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title=""></a> -->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+
+   <section id="intro">
+
+    <div class="intro-text">
+      <p style="margin-top: 400px;">We are provide knowledge about computer language C.</p>
+      <a href="#main" class="btn-get-started scrollto">Get Started</a>    </div>
+
+   
+    </div>
+
+  </section><!-- #intro -->
+
+
+<section id="main" class="main">
+      <div class="pro-base" align="center">
+         <div class="def">
+            <div align="center" class="theory">
+              <span style="font-size:30px;color: #000;">function in c</span>
+             <h6> <span style="font-size:30px;color: #000;">---------------</span></h6>
+              
+               <span style="font-size: 23px;color: #000;">Syntax of a function : </span>
+                  <br> <br><div style=" padding: 15px; background: #d7dbdd"> return_type&nbsp; function_name&nbsp; (argument list)
+                  <br>  {
+                   <br>     Set of statements – Block of code
+                  <br>  }<br></div>
+                  <br>
+               <span style="font-size:18px;color: #000;">    In above syntax, </span><br><br>
+           <span style="font-size: 20px;color: #000;"> return_type:</span> Return type can be of any data type such as int, double, char, void, short etc. Don’t worry you will understand these terms better once you go through the examples below.
+<br><br>
+<span style="font-size: 20px;color: #000;">function_name:</span> It can be anything, however it is advised to have a meaningful name for the functions so that it would be easy to understand the purpose of function just by seeing it’s name.
+<br><br>
+<span style="font-size: 20px;color: #000;">argument list:</span> Argument list contains variables names along with their data types. These arguments are kind of inputs for the function. For example – A function which is used to add two integer variables, will be having two integer argument.
+            </div>
+            
+             <br>
+         </div>
+         <div class="def">
+          <div align="center" class="theory">
+              <span style="font-size: 25px;color: #000;">
+                with return type and with argument
+              </span>
+            <br>
+          </div>  <h5 align="left"><B><span style="font-size: 40px;"><sub>*</sub></span> write program to add two number , with return type and with argument.</B></h5>
+             <h5 align="left"><B>Input :</B></h5>
+              <div class="pro-sub" align="left">
+                 #include<span><<span>stdio</span></span><span>.h</span><span>><span> 
+                 <br> #include<span><<span>conio</span></span><span>.h</span><span>><span> 
+            <br>     int addition(int num1, int num2)
+<br> {
+   <br>   int sum;
+  <br>    sum = num1+num2;
+<br> 
+ <br>     return sum;
+<br> }
+<br> 
+<br> void main()
+<br> {
+  <br>    int var1, var2;
+  <br>clrscr();
+   <br>   printf("Enter number 1: ");
+  <br>    scanf("%d",&var1);
+   <br>   printf("Enter number 2: ");
+   <br>   scanf("%d",&var2);
+<br> 
+   <br>   int res = addition(var1, var2);
+  <br>   printf ("Output: %d", res);
+  <br>getch();
+<br>}
+              </div>
+
+              <h5 align="left"><B>Output :</B></h5>
+              <div class="pro-sub" align="left">
+                Enter number 1: 90
+<br>Enter number 2: 80
+<br>Output: 170
+                
+             
+         
+       </div>
+            <div align="center" class="theory"><span style="font-size: 40px;color: red;"><sub>*</sub></span> &nbsp;If you want to return charactor in above program than you can change return type int to char.<br>
+              <span style="font-size: 40px;color: red;"><sub>*</sub></span> &nbsp;you can also give function name as your own name .<br>
+              <span style="font-size: 40px;color: red;"><sub>*</sub></span>  &nbsp;it is posible to give multiple argument in program.
+         </div>
+          <br>
+       </div>
+         <div class="def">
+            <div align="center" class="theory">
+              <span style="font-size: 25px;color: #000;">
+                No return type and with argument
+              </span><br>
+            </div>
+             <h5 align="left"><B><span style="font-size: 40px;"><sub>*</sub></span> Creating a void user defined function that doesn’t return anything.</B></h5>
+             <h5 align="left"><B>Input :</B></h5>
+              <div class="pro-sub" align="left">
+                 #include<span><<span>stdio</span></span><span>.h</span><span>><span> 
+                 <br> #include<span><<span>conio</span></span><span>.h</span><span>><span> 
+                 <br> /* function return type is void and it doesn't have parameters*/
+<br>void introduction()
+<br>{
+  <br>  printf("Hi\n");
+   <br> printf("My name is jay\n");
+   <br> printf("How are you?");
+   <br> /* There is no return statement inside this function, since its
+   <br>  * return type is void
+   <br>  */
+<br>}
+<br>
+<br>void main()
+<br>{
+ <br> clrscr();
+  <br>   /*calling function*/
+  <br>   introduction();
+   <br>  getch();
+<br>}
+              </div>
+
+              <h5 align="left"><B>Output :</B></h5>
+              <div class="pro-sub" align="left">
+                 Hi
+<br>My name is jay
+<br>How are you?
+              </div><br>
+         </div>
+     
+    
+
+  <div class="def">
+            <div align="center" class="theory">
+              <span style="font-size: 25px;color: #000;">with return type and no argument</span><br>
+            </div>
+             <h5 align="left"><B><span style="font-size: 40px;"><sub>*</sub></span> write program to add two number ,  with return type and no argument.</B></h5>
+             <h5 align="left"><B>Input :</B></h5>
+              <div class="pro-sub" align="left">
+                 #include<span><<span>stdio</span></span><span>.h</span><span>><span> 
+                 <br> #include<span><<span>conio</span></span><span>.h</span><span>><span> 
+                <br>   int sum(); 
+  <br>void main()
+  <br>{ 
+  <br>   int num;
+  <br>  clrscr(); 
+  <br> num = sum(); 
+  <br> printf("\nSum of two given values = %d", num); 
+  <br>  getch();
+ <br> } 
+ <br>
+ <br>int sum() 
+ <br>{ 
+  <br> int a = 5, b = 8, sum; 
+   <br>sum = a+b; 
+   <br> return sum; 
+ <br>}
+              </div>
+
+              <h5 align="left"><B>Output :</B></h5>
+              <div class="pro-sub" align="left">
+                 
+                 Sum of two given values = 13
+                 
+              </div><br>
+         </div>
+
+
+           <div class="def">
+            <div align="center" class="theory">
+              <span style="font-size: 25px;color: #000;">No return type and no argument</span><br>          </div>
+             <h5 align="left"><B><span style="font-size: 40px;"><sub>*</sub></span> write program to calculate the area of square using the function with no arguments and no return values
+.</B></h5>
+             <h5 align="left"><B>Input :</B></h5>
+              <div class="pro-sub" align="left">
+                 #include<span><<span>stdio</span></span><span>.h</span><span>><span> 
+                 <br> #include<span><<span>conio</span></span><span>.h</span><span>><span> 
+              <br> void area();   //function prototype
+<br>void main()
+<br>{
+<br>clrscr();
+  <br>area();    //function call
+  <br>getch();
+ 
+<br>}
+<br>void area()
+<br>{
+ <br> int square_area, square_side;
+ <br> printf("Enter the side of square :");
+ <br> scanf("%d",&square_side);
+ <br> square_area = square_side * square_side;
+ <br> printf("Area of Square = %d",square_area);
+<br>}
+              </div>
+
+              <h5 align="left"><B>Output :</B></h5>
+              <div class="pro-sub" align="left">
+                 
+                 Enter the side of square : 4
+                <br> Area of Square = 16
+              </div><br>
+         </div>
+</div>
+  </section>
+
+
+  <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about" class="section-bg">
+      <div class="container-fluid">
+        <div class="section-header">
+          <h3 class="section-title">About Us</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">
+           Hello Friends, We are here provide Different Programming Languages Knowledge.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 about-img wow fadeInLeft">
+            <img src="img/about-img.jpg" alt="">
+          </div>
+
+          <div class="col-lg-6 content wow fadeInRight">
+            <h2>You already know a language. Maybe you learned it in school or probably learn it out of curiosity.</h2>
+            <h3>Every single one of those jobs you heard about was in one way or the other related to computer programming. Here’s the harsh truth.</h3>
+            <p>
+             If you have just stepped into college. which means you are still a young youth like all others, wishing to taste success in life. But you are confused.
+            </p>
+            <p>
+             We are talking about a decent level of knowledge in programming with a sound understanding of all the basic principles and concepts. If you fall into this category, We would suggest you continue with the language, whichever it might be.
+             <br>You do not wish to go hardcore into programming but would like to know at least a language that could help you develop some software in future.This might be the case if you are pursuing engineering in some other branch other than Computer Science. You do not intend to foray into the IT field but knowledge of a language is always beneficiary.<br>
+            </p>
+          </div>
+          <div style="margin-left: 15px;" class="box featured wow fadeInUp">
+            <p>The only difference being you’d like to learn a programming language to make a website of your own or probably want to get into App Development. This is very specific in the case you have already figured out that this is what you wish to do. Java is the language to pick up and go within this case. The reason is simple; Java is a highly object-oriented language that is immensely effective in the case of Web Development and App Development.
+This might be the most important one. This scenario is for the cases wherein you are really interested in what goes inside of being a good programmer. You wish to be well versed with all the theoretical knowledge, not only the application based. In such cases, We will suggest C/C++. It is harder than other languages that we have mentioned here and you will have to spend a significant amount of time learning it. But, here is the thing. Once you manage to learn it, you will be having in-depth knowledge of programming as a skill and why do we do the things we do. There are numerous other benefits as well; such as C/C++ has a much faster processing time and is the best choice if you wish to get into competitive coding.</p><br>
+            Do figure out which category do you belong to and begin your journey to be a great programmer. No matter which language you pick up, just stick to it and don’t abandon it midway. Devote your time and energy to it and see it showering you with success.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact">
+      <div class="container">
+        <div class="row wow fadeInUp">
+
+          <div class="col-lg-4 col-md-4">
+            <div class="contact-about">
+              <h3>Programer Library</h3>
+             
+              <div class="social-links">
+                
+                <a href="https://www.instagram.com/programmer_library/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="info">
+              <div>
+                <i class="ion-ios-location-outline"></i>
+                <p>Khodiyar Nagar,Bapu Nagar<br>Ahmedabad-380024</p>
+              </div>
+
+              <div>
+                <i class="ion-ios-email-outline"></i>
+                <p>programmerlibrary111@gmail.com</p>
+              </div>
+
+              <div>
+                <i class="ion-ios-telephone-outline"></i>
+                <p>+91 7043858045</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-8">
+            <div class="form">
+              <div id="sendmessage">Your message has been sent. Thank you!</div>
+              <div id="errormessage"></div>
+              <form action="" method="post" role="form" class="contactForm">
+                <div class="form-row">
+                 
+                  <p style="margin-left: 30px;"><span style="color: #00acc1;">If you have any questions then ask us in our E-mail.</span><br> Also You have some solutions then tell us we will try our best to provide best materials to you.</p>
+                
+              </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #contact -->
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="#intro" class="scrollto">Home</a>
+            <a href="#about" class="scrollto">About</a>
+           
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+ <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

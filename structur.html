@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Programer Lib</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Avilon
+    Theme URL: https://bootstrapmade.com/avilon-bootstrap-landing-page-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+   <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h1><a href="#intro" class="scrollto"> Programer <br> <span style="font-size:17px">Library</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="#intro"><img src="img/logo.png" alt="" title=""></a> -->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+
+
+
+
+
+   <section id="intro">
+
+    <div class="intro-text">
+      <p style="margin-top: 400px;">We are provide knowledge about computer language C.</p>
+      <a href="#main" class="btn-get-started scrollto">Get Started</a>    </div>
+
+   
+    </div>
+
+  </section><!-- #intro -->
+
+  <section id="main" class="main">
+      <div class="pro-base" align="center">
+         <div class="def">
+            <div align="center" class="theory">
+              <span style="font-size: 25px;color: #000;">Basic structure in c</span><br><br>
+            Structure is a group of variables of different data types represented by a single name. Lets take an example to understand the need of a structure in C programming.
+            <br>
+            How to create a structure in C Programming
+We use struct keyword to create a structure in C. The struct keyword is a short form of structured data type.
+<br>
+            
+            <div style=" padding: 15px; background: #d7dbdd">
+
+              struct struct_name {
+              <br>   DataType member1_name;
+              <br>   DataType member2_name;
+              <br>   DataType member3_name;
+              <br>   …
+              <br>};
+              <br>
+
+              Here struct_name can be anything of your choice. Members data type can be same or different. Once we have declared the structure we can use the struct name as a data type like int, float etc.
+                <br>
+
+
+            </div>
+
+
+            </div>
+             <h5 align="left"><B><span style="font-size: 40px;"><sub>*</sub></span> Example of Structure in C.</B></h5>
+             <h5 align="left"><B>Input :</B></h5>
+              <div class="pro-sub" align="left">
+                 #include<span><<span>stdio</span></span><span>.h</span><span>><span> 
+                 <br> #include<span><<span>conio</span></span><span>.h</span><span>><span> 
+                 <br> /* Created a structure here. The name of the structure is
+              <br>  * StudentData.
+              <br>   */
+              <br>  struct StudentData{
+               <br>       char *stu_name;
+               <br>       int stu_id;
+               <br>       int stu_age;
+               <br>   };
+                 <br> void main() 
+                 <br> {
+                        <br>clrscr();
+                       <br> /* student is the variable of structure StudentData*/
+                       <br> struct StudentData student;
+
+                       <br>  /*Assigning the values of each struct member here*/
+                       <br> student.stu_name = "Steve";
+                       <br> student.stu_id = 1234;
+                      <br>  student.stu_age = 30;
+
+                      <br>   /* Displaying the values of struct members */
+                      <br>   printf("Student Name is: %s", student.stu_name);
+                      <br>   printf("\nStudent Id is: %d", student.stu_id);
+                      <br>   printf("\nStudent Age is: %d", student.stu_age);
+                 
+                       <br> getch();
+                 <br> }
+              </div>
+
+              <h5 align="left"><B>Output :</B></h5>
+              <div class="pro-sub" align="left">
+               <br>Student Name is: Steve
+                <br>Student Id is: 1234
+                <br>Student Age is: 30
+
+
+              </div><br>
+         </div>
+         <div class="def">
+            <div align="center" class="theory">
+              <span style="font-size: 25px;color: #000;">Add two number</span><br><br>
+           In this program, user is asked to enter two integers. Two integers entered by the user is stored in variables firstNumber and secondNumber respectively. This is done using scanf() function.
+           <br> if a user will input two numbers as : '5', '10' then '15' (5 + 10) will be printed.
+<br>
+Then, variables firstNumber and secondNumber are added using + operator and the result is stored in sumOfTwoNumbers.    </div>
+             <h5 align="left"><B><span style="font-size: 40px;"><sub>*</sub></span> write program to add two number.</B></h5>
+             <h5 align="left"><B>Input :</B></h5>
+              <div class="pro-sub" align="left">
+                 #include<span><<span>stdio</span></span><span>.h</span><span>><span> 
+                 <br> #include<span><<span>conio</span></span><span>.h</span><span>><span> 
+                 <br> void main() 
+                 <br> {
+                        <br>clrscr();
+                     
+                       <br> getch();
+                 <br> }
+              </div>
+
+              <h5 align="left"><B>Output :</B></h5>
+              <div class="pro-sub" align="left">
+                 enter two value :5
+                
+              </div>
+         
+       
+            <div align="center" class="theory"><span style="font-size: 40px;color: red;"><sub>*</sub></span> &nbsp;If you want to subtraction in above program you can change addition sign to substract sign.<br>
+              <span style="font-size: 40px;color: red;"><sub>*</sub></span> &nbsp;If you want to multiplication than you can change addition sign to multiplication sign.<br>
+              <span style="font-size: 40px;color: red;"><sub>*</sub></span>  &nbsp;If you want to division than you can change addition sign to division sign.
+         </div>
+          <br>
+       </div>
+         <div class="def">
+            <div align="center" class="theory">
+              <span style="font-size: 25px;color: #000;">swap two number</span><br><br>In the belove program, the temporaryVariable is assigned the value of firstNumber.
+Then, the value of firstNumber is assigned to secondNumber.
+<br>Finally, the temporaryVariable (which holds the initial value of firstNumber) is assigned to secondNumber which completes the swapping process.<br>
+            </div>
+             <h5 align="left"><B><span style="font-size: 40px;"><sub>*</sub></span> write program to swap two value with use of third variable.</B></h5>
+             <h5 align="left"><B>Input :</B></h5>
+              <div class="pro-sub" align="left">
+                 #include<span><<span>stdio</span></span><span>.h</span><span>><span> 
+                 <br> #include<span><<span>conio</span></span><span>.h</span><span>><span> 
+                 <br> void main() 
+                 <br> {
+                         <br>clrscr();
+                      
+                       <br> getch();
+                 <br> }
+              </div>
+
+              <h5 align="left"><B>Output :</B></h5>
+              <div class="pro-sub" align="left">
+                 
+                 <br>enter value of a :5
+                 
+              </div><br>
+         </div>
+      </div>
+    
+
+
+
+  </section>
+
+
+
+
+
+
+<!--==========================
+      About Us Section
+    ============================-->
+
+  <section id="about" class="section-bg">
+      <div class="container-fluid">
+        <div class="section-header">
+          <h3 class="section-title">About Us</h3>
+          <span class="section-divider"></span>
+          <p class="section-description">
+           Hello Friends, We are here provide Different Programming Languages Knowledge.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 about-img wow fadeInLeft">
+            <img src="img/about-img.jpg" alt="">
+          </div>
+
+          <div class="col-lg-6 content wow fadeInRight">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elite storium paralate</h2>
+            <h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <ul>
+              <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              <li><i class="ion-android-checkmark-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+              <li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+            </ul>
+
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Libero justo laoreet sit amet cursus sit amet dictum sit. Commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+ <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/magnific-popup/magnific-popup.min.js"></script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
